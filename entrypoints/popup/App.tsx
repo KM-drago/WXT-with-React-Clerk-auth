@@ -15,7 +15,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl={`${EXTENSION_URL}/sidepanel.html`} signInFallbackRedirectUrl={`${EXTENSION_URL}/sidepanel.html`} signUpFallbackRedirectUrl={`${EXTENSION_URL}/sidepanel.html`}>
+    <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl={`${EXTENSION_URL}/popup.html`} signInFallbackRedirectUrl={`${EXTENSION_URL}/popup.html`} signUpFallbackRedirectUrl={`${EXTENSION_URL}/popup.html`}>
       <div>
         <a href="https://wxt.dev" target="_blank">
           <img src={wxtLogo} className="logo" alt="WXT logo" />

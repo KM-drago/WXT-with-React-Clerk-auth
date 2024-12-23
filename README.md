@@ -43,9 +43,9 @@ function App() {
   return (
     <ClerkProvider
       publishableKey={PUBLISHABLE_KEY}
-      afterSignOutUrl={`${EXTENSION_URL}/sidepanel.html`}
-      signInFallbackRedirectUrl={`${EXTENSION_URL}/sidepanel.html`}
-      signUpFallbackRedirectUrl={`${EXTENSION_URL}/sidepanel.html`}
+      afterSignOutUrl={`${EXTENSION_URL}/popup.html`}
+      signInFallbackRedirectUrl={`${EXTENSION_URL}/popup.html`}
+      signUpFallbackRedirectUrl={`${EXTENSION_URL}/popup.html`}
     >
       ...
     </ClerkProvider>
@@ -92,12 +92,6 @@ export default defineConfig({
 });
 
 ```
-
-### Warning provided by Clerk [here in step 14](https://clerk.com/docs/quickstarts/chrome-extension)
-
-After signing up or signing in, your popup may appear to crash. Closing and reopening the popup should restart the extension and you should be signed in.
-
-Your extension does not yet have anything to handle routing, and by default, the Clerk components attempt to redirect the user.
 
 ### References
 
