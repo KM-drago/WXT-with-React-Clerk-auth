@@ -75,7 +75,7 @@ VITE_CRX_PUBLIC_KEY=<YOUR_PUBLIC_KEY>
 
 ### Updates to manifest.json
 
-Change wxt.config.ts as shown.
+Change wxt.config.ts as shown. Notice the use of function syntax in manifest. [ref](https://wxt.dev/guide/essentials/config/environment-variables.html)
 
 ```
 import { defineConfig } from "wxt";
@@ -98,5 +98,6 @@ export default defineConfig({
 - Clerk Plasmo Guide - https://clerk.com/docs/quickstarts/chrome-extension
 - Google Key Guide - https://developer.chrome.com/docs/extensions/reference/manifest/key
 - Plasmo Itero Key Tool - https://itero.plasmo.com/tools/generate-keypairs
+- WXT env variables - https://wxt.dev/guide/essentials/config/environment-variables.html
 - WXT - https://wxt.dev/
 - Clerk - https://clerk.com/
