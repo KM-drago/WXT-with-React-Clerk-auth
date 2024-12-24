@@ -92,6 +92,7 @@ export default defineConfig({
 });
 
 ```
+#### Note
 Please note that if you are calling other APIs with Clerk's auth tokens, you will have to manually set these auth tokens in the request header.
 
 ### References
