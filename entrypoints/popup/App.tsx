@@ -8,7 +8,7 @@ const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 const EXTENSION_URL = chrome.runtime.getURL(".");
 
 if (!PUBLISHABLE_KEY) {
-  throw new Error("Please add the VITE_PUBLIC_CLERK_PUBLISHABLE_KEY to the .env.development file");
+  throw new Error("Please add the VITE_PUBLIC_CLERK_PUBLISHABLE_KEY to the .env file");
 }
 
 function App() {
